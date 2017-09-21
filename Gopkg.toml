@@ -21,6 +21,12 @@
 #  version = "2.4.0"
 
 
+required = [
+  "github.com/golang/protobuf/protoc-gen-go",
+  "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway",
+  "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger",
+]
+
 [[constraint]]
   name = "github.com/golang/mock"
   version = "1.0.0"
