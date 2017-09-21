@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/golang/glog"
+  packages = ["."]
+  revision = "23def4e6c14b4da8ac2ed8007337bc5eb5007998"
+
+[[projects]]
   name = "github.com/golang/mock"
   packages = ["gomock"]
   revision = "13f360950a79f5864a972c786a10a50e44b69541"
@@ -10,12 +16,12 @@
 [[projects]]
   branch = "master"
   name = "github.com/golang/protobuf"
-  packages = ["jsonpb","proto","protoc-gen-go/descriptor","ptypes","ptypes/any","ptypes/duration","ptypes/struct","ptypes/timestamp"]
+  packages = ["jsonpb","proto","protoc-gen-go","protoc-gen-go/descriptor","protoc-gen-go/generator","protoc-gen-go/grpc","protoc-gen-go/plugin","ptypes","ptypes/any","ptypes/duration","ptypes/struct","ptypes/timestamp"]
   revision = "130e6b02ab059e7b717a096f397c5b60111cae74"
 
 [[projects]]
   name = "github.com/grpc-ecosystem/grpc-gateway"
-  packages = ["runtime","runtime/internal","utilities"]
+  packages = ["protoc-gen-grpc-gateway","protoc-gen-grpc-gateway/descriptor","protoc-gen-grpc-gateway/generator","protoc-gen-grpc-gateway/gengateway","protoc-gen-grpc-gateway/httprule","protoc-gen-swagger","protoc-gen-swagger/genswagger","runtime","runtime/internal","utilities"]
   revision = "589b126116b5fc961939b3e156c29e4d9d58222f"
   version = "v1.2.2"
 
@@ -46,6 +52,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "373e1641788fdab7b7d2707a43bfce2638346de0415abf9efbd746c38eae398e"
+  inputs-digest = "9620eebbade3a77944b5e9845566d8b6c5a1390cb25ae98610108f13f3692a7c"
   solver-name = "gps-cdcl"
   solver-version = 1
